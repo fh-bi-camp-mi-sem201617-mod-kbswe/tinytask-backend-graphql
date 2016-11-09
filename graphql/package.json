@@ -14,5 +14,8 @@
     "mongodb"
   ],
   "author": "Alexej Esau, Ruben Gees",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "tinytaskdb": "github:kswe-2016-17/tinytaskdb"
+  }
 }
