@@ -1,0 +1,18 @@
+{
+  "name": "tinytask-backend-graphql",
+  "version": "0.1.0",
+  "description": "GraphQL API for TinyTask.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tinytask",
+    "api",
+    "graphql",
+    "mongo",
+    "mongodb"
+  ],
+  "author": "Alexej Esau, Ruben Gees",
+  "license": "UNLICENSED"
+}
