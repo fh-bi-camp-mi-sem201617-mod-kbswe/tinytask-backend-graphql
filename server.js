@@ -16,7 +16,8 @@ app.use("/graphql", graphqlHTTP(req => ({
 })));
 
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost/findme");
+// TODO: Change to real address
+mongoose.connect("mongodb://localhost/tinytask");
 
 const server = app.listen(8080, () => {
     console.log("Listening at port", server.address().port);
