@@ -4,14 +4,14 @@
   "description": "GraphQL API for TinyTask.",
   "main": "index.js",
   "scripts": {
-    "prestart": "( ping -c 1 google.de && npm -s install ) || exit 0",
-    "start": "nodemon server.js --exec babel-node --presets es2015,stage-0",
+    "preserve": "( ping -c 1 google.de && npm -s install ) || exit 0",
+    "serve": "nodemon lib/server.js --exec babel-node --presets es2015,stage-0",
     "build": "babel lib -d dist --presets es2015,stage-0",
     "lint": "eslint lib || exit 0",
-    "serve": "node dist/server.js",
+    "start": "node dist/server.js",
     "clean": "rm -rf dist",
-    "prebuild": "npm run clean && ( ping -c 1 google.de && npm -s install ) || exit 0",
-    "preserve": "npm run build"
+    "prestart": "npm run build",
+    "prebuild": "mkdir -p dist"
   },
   "keywords": [
     "tinytask",
@@ -23,8 +23,9 @@
   "author": "Alexej Esau, Ruben Gees",
   "license": "UNLICENSED",
   "dependencies": {
-    "tinytaskdb": "github:kswe-2016-17/tinytaskdb",
+    "babelify": "7.3.0",
     "body-parser": "1.15.2",
+    "browserify": "13.1.1",
     "express": "4.14.0",
     "express-graphql": "0.6.1",
     "graphql": "0.8.2",
@@ -32,7 +33,8 @@
     "graphql-compose-connection": "2.1.1",
     "graphql-compose-mongoose": "1.3.5",
     "graphql-date": "1.0.2",
-    "mongoose": "4.6.8"
+    "mongoose": "4.6.8",
+    "tinytaskdb": "github:kswe-2016-17/tinytaskdb"
   },
   "devDependencies": {
     "babel-cli": "6.18.0",
