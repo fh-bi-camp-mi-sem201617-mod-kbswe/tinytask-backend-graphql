@@ -9,7 +9,11 @@ import schema from "./schema";
 const app = express();
 
 app.use(json());
-app.use("/graphql", graphqlHTTP(req => ({
+app.use("/graphql", function (req, res, next) {
+    // Validate token here
+
+    return next();
+}, graphqlHTTP(req => ({
     schema,
     graphiql: true,
     pretty: true
