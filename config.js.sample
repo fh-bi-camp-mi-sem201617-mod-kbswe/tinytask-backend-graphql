@@ -1,0 +1,7 @@
+module.exports = {
+    "auth": {
+        "domain": "XXX.eu.auth0.com",
+        "clientID": "Auth0 Client Id",
+        "clientSecret": "Auth0 Secret"
+    }
+};
