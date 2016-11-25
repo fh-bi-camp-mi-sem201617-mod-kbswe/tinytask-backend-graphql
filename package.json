@@ -27,14 +27,17 @@
     "babel-preset-es2015": "6.18.0",
     "babel-preset-stage-0": "6.16.0",
     "body-parser": "1.15.2",
+    "cors": "2.8.1",
     "express": "4.14.0",
     "express-graphql": "0.6.1",
+    "express-jwt": "5.1.0",
     "graphql": "0.8.2",
     "graphql-compose": "1.5.0",
     "graphql-compose-connection": "2.1.2",
     "graphql-compose-mongoose": "1.4.0",
     "graphql-date": "1.0.2",
-    "mongoose": "4.7.0",
+    "mongoose": "4.6.8",
+    "request": "2.79.0",
     "tinytaskdb": "github:kswe-2016-17/tinytaskdb"
   },
   "devDependencies": {
