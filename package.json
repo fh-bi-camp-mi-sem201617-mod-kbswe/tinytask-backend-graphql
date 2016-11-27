@@ -10,7 +10,7 @@
     "lint": "eslint lib || exit 0",
     "start": "node dist/server.js",
     "clean": "rm -rf dist",
-    "prestart": "npm run build",
+    "postinstall": "npm run build",
     "prebuild": "mkdir -p dist"
   },
   "keywords": [
