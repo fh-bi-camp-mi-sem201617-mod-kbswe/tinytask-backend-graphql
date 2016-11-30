@@ -1,4 +1,4 @@
-modoules.export = {
+module.exports = {
     auth: {
         domain: process.env.AUTH_DOMAIN || "",
         clientID: process.env.AUTH_CLIENT_ID || "",
